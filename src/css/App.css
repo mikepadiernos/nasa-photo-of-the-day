@@ -1,11 +1,8 @@
-.app {}
-
 .app-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  animation: app-logo-spin infinite 20s linear;
+  height: auto;
   pointer-events: none;
 }
-
 .app-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -14,13 +11,35 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
 }
-
 .app-link {
   color: #61dafb;
 }
-
+@-moz-keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes app-logo-spin {
   from {
     transform: rotate(0deg);
@@ -28,4 +47,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+.card-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container:before {
+  background-color: #000;
+  opacity: 0.5;
+}
+.wrapper {
+  overflow: hidden;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+.logo-container img.logo {
+  width: 80%;
 }
