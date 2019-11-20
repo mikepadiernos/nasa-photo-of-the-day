@@ -2,6 +2,7 @@ import React from "react"
 import "./css/App.css"
 
 import Logo from './components/Assets/Logo'
+import ImageImport from './components/Image/Image'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         </div>
         <div className='card-container'>
           <div className='card'>
-
+						<ImageImport />
           </div>
         </div>
       </div>
