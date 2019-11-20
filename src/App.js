@@ -1,13 +1,16 @@
 import React from "react";
-import "./App.css";
+import "./css/App.css";
 
 function App() {
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+    <div className='app'>
+      <div className='wrapper'>
+        <div className='app-header'>
+          <div className='app-logo' />
+        </div>
+        <div className='app-body'>
+        </div>
+      </div>
     </div>
   );
 }
