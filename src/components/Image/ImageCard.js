@@ -1,10 +1,10 @@
 import React from "react"
 
-const ImageCard =({image}) => {
+const ImageCard = image => {
     return (
-        <div>
-            <p>Image</p>
-        </div>
+        <span className='image image-picture'>
+            <img src={image.url} alt={image.title} />
+        </span>
     )
 };
 

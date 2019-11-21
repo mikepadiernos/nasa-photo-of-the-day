@@ -10,7 +10,7 @@ export default function ImageImport() {
 		axios
 			.get('https://api.nasa.gov/planetary/apod?api_key=LtkTFx3liU2jtN6udgASIKNUPk9ErbZDID0UtRkh')
 			.then(response => {
-				setImage(response.date);
+				setImage(response.data);
 				console.log('Image', response);
 			})
 			.catch(error => console.log(error));
@@ -20,7 +20,10 @@ export default function ImageImport() {
 
 	return (
 		<div className='image'>
-			<ImageCard />
+			<h2 className='image-title'>
+				{image.title}
+			</h2>
+			<ImageCard url={image.url} title={image.title} />
 		</div>
 	)
 }
