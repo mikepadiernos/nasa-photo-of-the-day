@@ -19,11 +19,18 @@ export default function ImageImport() {
 	useEffect(imageUpdate, []);
 
 	return (
-		<div className='image'>
-			<h2 className='image-title'>
-				{image.title}
-			</h2>
-			<ImageCard url={image.url} title={image.title} />
-		</div>
+		<article className='image'>
+			<div className='column column-1'>
+				<h2 className='image-title'>
+					{image.title}
+				</h2>
+				<p>
+					{image.explanation}
+				</p>
+			</div>
+			<div className='column column-2'>
+				<ImageCard url={image.url} title={image.title} />
+			</div>
+		</article>
 	)
 }

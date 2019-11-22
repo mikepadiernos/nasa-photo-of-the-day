@@ -66,21 +66,28 @@
   position: absolute;
 }
 .card-container .card {
-  width: 50%;
+  width: 80%;
   height: auto;
   background-color: #fff;
   z-index: 1;
-  padding: 0 4px 0;
+  padding: 4px;
 }
 .wrapper {
   overflow: hidden;
 }
-.image h2 {
-  text-align: center;
+.image {
+  display: flex;
 }
-img {
+.image h2,
+.image p {
+  padding: 0 20px;
+}
+.image img {
   width: 100%;
   height: auto;
+}
+.image .column {
+  width: 50%;
 }
 .logo-container {
   display: flex;
