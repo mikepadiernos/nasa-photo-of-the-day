@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
-import axios from "axios";
+import axios from 'axios';
 import Image from './Image';
+import { ImageButton } from '../Styles/Styles'
 
 export default function ImageImport() {
 
@@ -20,16 +21,28 @@ export default function ImageImport() {
 
 	return (
 		<article className='image'>
-			<div className='column column-1'>
+            <div className='column column-top'>
 				<h2 className='image-title'>
 					{image.title}
-				</h2>
+			     </h2>
+            </div>
+			<div className='column column-left'>
 				<p>
 					{image.explanation}
 				</p>
 			</div>
-			<div className='column column-2'>
+			<div className='column column-right'>
 				<Image url={image.url} title={image.title} />
+			</div>
+			<div className='column column-bottom'>
+			    <div className='buttons buttons-container'>
+			        <span>
+			            <ImageButton>Previous Day</ImageButton>
+			        </span>
+			        <span>
+			            <ImageButton>Next Day</ImageButton>
+			        </span>
+			    </div>
 			</div>
 		</article>
 	)
