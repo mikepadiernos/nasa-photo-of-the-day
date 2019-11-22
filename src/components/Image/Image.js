@@ -5,7 +5,7 @@ const Image = image => {
   //   if (!image.photoOfTheDay) return <h3>Loading...</h3>;
 
     return (
-        <span className='image image-picture'>
+        <span className='image-picture'>
             <img src={image.url} alt={image.title} />
         </span>
     )

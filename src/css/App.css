@@ -75,6 +75,7 @@
   background-color: #fff;
   z-index: 1;
   padding: 20px;
+  border-radius: 4px;
 }
 .wrapper {
   overflow: auto;
@@ -99,6 +100,7 @@
 .image img {
   width: 100%;
   height: auto;
+  border-radius: 4px;
 }
 .image .column.column-top {
   width: 100%;
