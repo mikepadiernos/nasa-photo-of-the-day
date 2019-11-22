@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
 import axios from 'axios';
 import Image from './Image';
+import Copyright from './Copyright';
 import { ButtonsContainer, Button } from '../Styles/Styles'
 
 export default function ImageImport() {
@@ -28,7 +29,7 @@ export default function ImageImport() {
             </div>
 			<div className='column column-left'>
 				<p>{image.explanation}</p>
-				<p><b>Copyright:</b> {image.copyright}</p>
+				<p><b>Copyright:</b> <Copyright copyright={image.copyright}/></p>
 				<p><b>Date:</b> {image.date}</p>
 			</div>
 			<div className='column column-right'>
