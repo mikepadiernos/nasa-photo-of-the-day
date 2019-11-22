@@ -72,8 +72,18 @@
   z-index: 1;
   padding: 4px;
 }
+@media only screen and (min-width: 1050px) {
+  .card-container .card {
+    width: 50%;
+  }
+}
 .wrapper {
-  overflow: hidden;
+  overflow: auto;
+}
+@media only screen and (min-width: 1050px) {
+  .wrapper {
+    overflow: hidden;
+  }
 }
 .image {
   display: flex;

@@ -2,7 +2,7 @@ import React from "react"
 import "./css/App.css"
 
 import Logo from './components/Assets/Logo'
-import ImageImport from './components/Image/Image'
+import ImageImport from './components/Image/ImageCard'
 
 function App() {
   return (
