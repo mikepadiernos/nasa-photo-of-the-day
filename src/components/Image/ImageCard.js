@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 import axios from 'axios';
 import Image from './Image';
-import { ImageButton } from '../Styles/Styles'
+import { ButtonsContainer, Button } from '../Styles/Styles'
 
 export default function ImageImport() {
 
@@ -27,22 +27,22 @@ export default function ImageImport() {
 			     </h2>
             </div>
 			<div className='column column-left'>
-				<p>
-					{image.explanation}
-				</p>
+				<p>{image.explanation}</p>
+				<p><b>Copyright:</b> {image.copyright}</p>
+				<p><b>Date:</b> {image.date}</p>
 			</div>
 			<div className='column column-right'>
-				<Image url={image.url} title={image.title} />
+				<Image url={image.hdurl} title={image.title} />
 			</div>
 			<div className='column column-bottom'>
-			    <div className='buttons buttons-container'>
+			    <ButtonsContainer className='buttons buttons-container'>
 			        <span>
-			            <ImageButton>Previous Day</ImageButton>
+			            <Button>Previous Day</Button>
 			        </span>
 			        <span>
-			            <ImageButton>Next Day</ImageButton>
+			            <Button>Next Day</Button>
 			        </span>
-			    </div>
+			    </ButtonsContainer>
 			</div>
 		</article>
 	)
